@@ -1,0 +1,48 @@
+@mixin text($fontSize, $fontWeight, $color, $padding, $paddingBottom) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color; 
+    padding: $padding;
+    padding-bottom: $paddingBottom;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.qrCode {
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.title {
+    
+    @include text(20px, 700, hsl(218, 44%, 22%), 25px, 0);
+}
+
+.description {
+    @include text(15px, 400, hsl(220, 15%, 55%), 25px, 35);
+}
+
+@media (max-width: 375px) {
+    
+}

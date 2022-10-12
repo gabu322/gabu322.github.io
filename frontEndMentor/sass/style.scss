@@ -1,0 +1,90 @@
+$primaryColor: #000000;
+$secondayColor: #111111;
+$lighterColor: #222222;
+$baseGap: 4rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, serif, "sans serif", cursive, fantasy, monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: $lighterColor;
+}
+
+.header {
+    width: auto;
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    height: 7rem;
+    padding: 1rem 0px;
+}
+
+.headerLogo {
+    height: 6rem;
+    width: 6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 70%;
+    width: 70%;
+}
+
+.headerText {
+    color: white;
+    font-size: 35px;
+}
+
+.mainContent {
+    max-width: 80%;
+    height: 100%;
+    background-color: $secondayColor;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: $baseGap;
+    gap: $baseGap;
+    justify-content: space-around;
+}
+
+.challengeCard {
+    width: 300px;
+    max-width: 400px;
+    height: 400px;
+    background-color: #444444;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .challengePreview {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 50%;
+        object-fit: cover;
+    }
+    .challengeTitle{
+        font-size: 40px;
+        padding-left: 20px;
+        color: black;
+    }
+    .challengeDescription{
+        font-size: 20px;
+        
+        color: black;
+    }
+}
+.footer {
+    background-color: transparent;
+}

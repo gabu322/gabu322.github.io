@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, serif, "sans serif", cursive, fantasy, monospace;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.mainContent {
+  background-color: hsl(30deg, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 600px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.card .productImage {
+  width: 50%;
+  height: 100%;
+  background-image: url("/productPreview/images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  border-radius: 10px 0 0 10px;
+}
+.card .texts {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+.card .texts .caption {
+  align-self: flex-start;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 48%);
+}
+.card .texts .productName {
+  font-family: Fraunces;
+  font-weight: bolder;
+  font-size: 36px;
+}
+.card .texts .productDescription {
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+}
+.card .texts .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.card .texts .price .actualPrice {
+  font-size: 30px;
+  font-family: "Fraunces";
+  color: hsl(158deg, 36%, 37%);
+  font-weight: 700;
+}
+.card .texts .price .originalPrice {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+.card .texts .buyProduct {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  background-color: hsla(158deg, 36%, 37%, 0.699);
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card .texts .buyProduct:hover {
+  background-color: hsl(158deg, 36%, 37%);
+}/*# sourceMappingURL=style.css.map */

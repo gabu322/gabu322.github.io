@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(31, 31, 31);
+    min-height: 100px;
+    padding: 25px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navButton{
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border: 5px rgb(31, 31, 31) solid;
+    border-radius: 10px;
+    transition: 0.5s;
+} .navButton:hover{ 
+    background-color: rgb(88, 88, 88);
+    border-bottom: 5px black solid;
+}
+
+.titulo{
+    text-align: center;
+    margin: 15px;
+}
+.abertura {
+    font-size: 20px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "mainGrid sideGrid";
+    padding: 20px;
+    flex: 1 0 auto;
+    width: 80%;
+    margin: auto;
+}
+
+.mainGrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
+}
+
+.mainCard{
+    padding: 5px;
+    border: 5px rgb(161, 161, 161) solid;
+    border-radius: 10px;
+    transition: 1s;
+    text-align: center;
+    min-width: 200px;
+    width: 30%;
+}.mainCard:hover{
+    border-color: black;
+}
+
+.mainCardImg{
+    width: 100%;
+    border-radius: 5px;   
+     
+}
+
+.sideGrid{  
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    flex-direction: column;
+}
+
+.sideTitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sidecard {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    border: 5px transparent  solid;
+    border-radius: 8px;
+    margin: 5px;
+    transition: 1s;
+} .sidecard:hover {
+    border-color: black;
+}
+
+.sideCardImg {
+    width: 100%;
+    border-radius: 5px;   
+}
+
+.footer{
+    position: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    height: 100px;
+    padding: 25px;
+}
+
+@media(max-width: 550px) {
+    .logo {
+        margin: auto;
+    }
+    .options {
+        margin: auto;
+    }
+    
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mainGrid" 
+        "sideGrid";
+    }
+    .mainCard {
+        width: 100%;
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+$darkCyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+
+$darkBlue: hsl(212, 21%, 14%);
+$greyBlye: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, serif, "sans serif", cursive, fantasy, monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.mainContent {
+    background-color: $cream;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+
+    .productImage {
+        width: 50%;
+        height: 100%;
+        background-image: url("/productPreview/images/image-product-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: 300px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .texts {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background-color: white;
+        border-radius: 0 10px 10px 0;
+
+        .caption {
+            align-self: flex-start;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: 700;
+            color: $greyBlye;
+        }
+
+        .productName {
+            font-family: Fraunces;
+            font-weight: bolder;
+            font-size: 36px;
+        }
+
+        .productDescription  {
+            font-size: 14px;
+            color: $greyBlye;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            
+            .actualPrice {
+                font-size: 30px;
+                font-family: "Fraunces";
+                color: $darkCyan;
+                font-weight: 700;
+            }
+
+            .originalPrice {
+                font-size: 14px;
+                text-decoration: line-through;
+                color: $greyBlye;
+            }
+        }
+
+        .buyProduct {
+            width: 200px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+            background-color: hsla(158, 36%, 37%, 0.699);
+            border: none;
+            border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $darkCyan;
+
+            }
+        }
+    }
+
+    
+}
+
