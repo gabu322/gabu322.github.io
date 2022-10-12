@@ -57,13 +57,14 @@ body {
   width: 300px;
   max-width: 400px;
   height: 400px;
-  background-color: #444444;
+  background-color: #b37171;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 .challengeCard .challengePreview {
+  background-image: url("/frontEndMentor/productPreview/images/image-product-desktop.jpg");
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   height: 50%;
