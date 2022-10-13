@@ -36,7 +36,7 @@ $white: hsl(0, 0%, 100%);
     .productImage {
         width: 50%;
         height: 100%;
-        background-image: url("/productPreview/images/image-product-desktop.jpg");
+        background-image: url("/frontEndMentor/productPreview/images/image-product-desktop.jpg");
         background-repeat: no-repeat;
         background-size: 300px;
         border-radius: 10px 0 0 10px;
@@ -80,7 +80,7 @@ $white: hsl(0, 0%, 100%);
             
             .actualPrice {
                 font-size: 30px;
-                font-family: "Fraunces";
+                font-family: Fraunces;
                 color: $darkCyan;
                 font-weight: 700;
             }
