@@ -1,11 +1,15 @@
 let canvasSize = 7.5;
-let printButton, capacitance;
+let printButton, capacitance, input, inputValue;
 
 function setup() {
 
     canvas1 = createCanvas(canvasSize * 100, canvasSize * 100);
     noStroke();
-    
+
+    input = createInput('Set capacitor value');
+    input.position(width + canvasSize, canvasSize * 5);
+    input.size(100);
+    input.input(setValue);
 
     printButton = createButton("Save to Ctrl + c");
     printButton.position(width + canvasSize, canvasSize);
@@ -30,7 +34,7 @@ function draw() {
     fill(0);
     textStyle(BOLD);
     textSize(canvasSize*10);
-    text("100", width/2, height / 2 - canvasSize*20);
+    text(Number(inputValue) , width/2, height / 2 - canvasSize*20);
     printButton.mousePressed(saveCanvasAsPrint);
 }
 
@@ -38,4 +42,8 @@ function saveCanvasAsPrint() {
     
     saveCanvas('CeramicCapacitor' + resistance , "png");
 
+}
+
+function setValue() {
+    inputValue = input;
 }
