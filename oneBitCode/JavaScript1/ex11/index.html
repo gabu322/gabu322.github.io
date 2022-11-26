@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneBitCode JavaScript1 Exercise 11</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="index.js" defer></script>
+</head>
+<body> 
+    <h1>Escalação de times</h1>
+    <hr>
+    <h2>Escalar jogador</h2>
+    <p>
+        <label for="position">Posição: </label>
+        <input type="text" name="position" id="position">
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name">
+        <label for="number">Número: </label>
+        <input type="text" name="number" id="number">
+        <button onClick="addPlayer()">Escalar</button>
+    </p>
+    <hr>
+    <h2>Remover jogador</h2>
+    <p>
+        <label for="numberToRemove">Número: </label>
+        <input type="text" name="numberToRemove" id="numberToRemove">
+        <button onClick="removePlayer()">Escalar</button>
+    </p>
+
+    <h2>Times</h2>
+    <ul id="teamList"></ul>
+</body>
+</html>
